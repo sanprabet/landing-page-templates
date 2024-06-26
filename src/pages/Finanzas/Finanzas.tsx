@@ -11,10 +11,6 @@ import { CountryCode } from 'libphonenumber-js';
 // Images
 import landing from '../../assets/landing.png';
 import Skandia from '../../assets/skandia.png';
-import Sura from '../../assets/sura.png';
-import Invexco from '../../assets/invexco.png';
-import Panamerican from '../../assets/panamerican.png';
-import Axa from '../../assets/axa.png';
 import descriptionImage from '../../assets/3.jpg';
 import descriptionImage2 from '../../assets/4.jpg';
 import descriptionImage3 from '../../assets/5.jpeg';
@@ -31,15 +27,15 @@ const Finanzas: React.FC = () => {
         navStyles: ' bg-main-green',
         logoText: 'SB',
         logoLink: '/',
-        links: [{ text: 'Servicios de Salud', link: '/salud' }],
+        links: [{ text: 'Portafolio Sura', link: '/salud' }],
         linkStyle: 'max-w-fit mx-auto my-3',
         ctaConfig: CTAButtonConfig,
     };
 
     const HeroSectionConfig = {
         sectionStyles: 'bg-main-green pt-[2rem] lg:pt-[4rem]',
-        headingText: 'FINANCIA',
-        secondaryText: 'TU FUTURO',
+        headingText: 'APUESTA POR TU FUTURO',
+        secondaryText: 'INVIERTE HOY',
         secondaryStyles: 'text-secondary-green',
         headingStyles: '',
         paragraphText:
@@ -57,13 +53,21 @@ const Finanzas: React.FC = () => {
         paragraphText:
             'En solo 3 pasos puedes acceder a los productos financieros más rentables y seguros de Colombia.',
         paragraphTextStyles: '',
-        ctaConfig: CTAButtonConfig,
+        ctaConfig: {
+            ctaButtonText: 'Agenda una cita',
+            ctaButtonStyles:
+                'bg-secondary-green hover:bg-secondary-green-grey text-main-green py-2 px-6 md:px-4 xl:px-8 text-[1.1rem] md:text-[1.2rem] font-medium w-fit mx-auto my-[2rem]',
+            ctaButtonId: '#cta',
+        },
         carrouselImages: [
             { src: Skandia, alt: 'Company 1' },
-            { src: Sura, alt: 'Company 2' },
-            { src: Invexco, alt: 'Company 3' },
-            { src: Panamerican, alt: 'Company 4' },
-            { src: Axa, alt: 'Company 5' },
+            { src: Skandia, alt: 'Company 1' },
+            { src: Skandia, alt: 'Company 1' },
+            { src: Skandia, alt: 'Company 1' },
+            { src: Skandia, alt: 'Company 1' },
+            { src: Skandia, alt: 'Company 1' },
+            { src: Skandia, alt: 'Company 1' },
+            { src: Skandia, alt: 'Company 1' },
         ],
     };
 

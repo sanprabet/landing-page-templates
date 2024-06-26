@@ -42,7 +42,7 @@ const  HeroSection: React.FC<HeroSectionProps> = ({
 }) => {
     return (
         <section
-            className={`hero-section relative flex min-h-[calc(100vh-20rem)] flex-col items-center justify-center text-center ${sectionStyles}`}
+            className={`hero-section relative flex flex-col items-center justify-center text-center ${sectionStyles}`}
         >
             {/* Hero content */}
             <div className="z-20">

@@ -26,7 +26,7 @@ const HomeNavbarConfig = {
 
 import landing2 from '../../assets/landing2.png';
 const HeroSectionConfig = {
-    sectionStyles: 'bg-main-blue  pt-[2rem] lg:pt-[4rem]',
+    sectionStyles: 'bg-main-blue  pt-[2rem] lg:pt-[4rem] min-h-[calc(100vh-90rem)]',
     headingText: 'CUIDA',
     secondaryText: 'TU FAMILIA',
     headingStyles: 'text-white',
@@ -39,24 +39,28 @@ const HeroSectionConfig = {
     backgroundAlt: 'Park Landscape',
 };
 
-import Skandia from '../../assets/skandia.png';
 import Sura from '../../assets/sura.png';
-import Invexco from '../../assets/invexco.png';
 import Panamerican from '../../assets/panamerican.png';
 import Axa from '../../assets/axa.png';
 
 const CompaniesSectionConfig = {
     headingText: 'QUEREMOS QUE TU SALUD.',
-    secondaryText: 'NO DEPENDA DE TU GOBIERNO.',
+    secondaryText: 'TENGA EL MEJOR SERVICIO.',
     headingTextStyles: 'text-main-blue',
     paragraphText:
     'En solo 3 pasos puedes acceder a los productos de salud con mejor cobertura y precios de Colombia.',
     paragraphTextStyles: '',
-    ctaConfig: CTAButtonConfig,
+    ctaConfig: {
+        ctaButtonText: 'Agenda una cita',
+        ctaButtonStyles:
+        'bg-secondary-blue hover:bg-secondary-blue-grey text-main-green my-2 py-2 px-6 md:px-4 xl:px-8 text-[1.1rem] md:text-[1.2rem] font-medium w-fit mx-auto my-[2rem]', 
+        ctaButtonId: '#cta',
+    },
     carrouselImages: [
-        { src: Skandia, alt: 'Company 1' },
         { src: Sura, alt: 'Company 2' },
-        { src: Invexco, alt: 'Company 3' },
+        { src: Panamerican, alt: 'Company 4' },
+        { src: Axa, alt: 'Company 5' },
+        { src: Sura, alt: 'Company 2' },
         { src: Panamerican, alt: 'Company 4' },
         { src: Axa, alt: 'Company 5' },
     ],
@@ -159,20 +163,25 @@ import { FaHospital } from "react-icons/fa";
 const DescriptionSection2Config = {
     sectionStyles: 'bg-white-cream',
     
-    title: '¿Que planes de salud ofrecemos?',
+    title: 'Accede a las mejores coberturas de salud con SURA.',
     titleStyle: 'poppins-light-900 text-main-blue text-[2rem] leading-[2rem] font-bold sm:px-4 sm:text-[3.2rem] sm:leading-[3.2rem] md:text-[4rem] md:leading-[4rem] xl:text-[5.5rem] xl:leading-[5.5rem] mt-8 mb-4',
     
     descriptionConfig: {
         data: [
             {
                 icon: <FaHospital />,
-                title: 'Seguro de Vida',
-                description: 'Cobertura adaptada a tus necesidades, disponible desde los 14 años. Respaldo económico y opciones de ahorro.',
+                title: 'Salud Global',
+                description: 'Máxima cobertura con habitación individual y tratamientos en el exterior. Protección global para tu familia.',
             },
             {
                 icon: <AiFillAlert />,
-                title: 'Cobertura',
-                description: 'Cobertura en toda la República',
+                title: 'Salud Clásico',
+                description: 'Esencial y equilibrado: habitación individual y asistencia en viajes. Protección completa y confiable.',
+            },
+            {
+                icon: <AiFillAlert />,
+                title: 'Salud Evoluciona',
+                description: 'Cobertura básica con laboratorios ilimitados y urgencias por enfermedad. Solución práctica y accesible.',
             },
         ],
         cardStyles: 'bg-white-cream-light',
