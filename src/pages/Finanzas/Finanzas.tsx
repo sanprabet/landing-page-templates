@@ -30,7 +30,7 @@ const Finanzas: React.FC = () => {
     const HomeNavbarConfig = {
         navStyles: ' bg-main-green',
         logoText: 'SB Finanzas',
-        logoLink: '/finanzas',
+        logoLink: '/',
         links: [{ text: 'Seguros de Salud', link: '/salud' }],
         linkStyle: 'max-w-fit mx-auto my-3',
         ctaConfig: CTAButtonConfig,

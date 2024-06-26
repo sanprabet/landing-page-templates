@@ -12,7 +12,7 @@ const CTAButtonConfig = {
 const HomeNavbarConfig = {
     navStyles: ' bg-main-blue ',
     logoText: 'SB Salud',
-    logoLink: '/salud',
+    logoLink: '/',
     links: [{ text: 'Servicios Financieros', link: '/finanzas' }],
     linkStyle: 'max-w-fit mx-auto my-3',
     ctaConfig: CTAButtonConfig,
