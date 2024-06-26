@@ -21,7 +21,7 @@ const DescriptionList: React.FC<DescriptionListProps> = ({
     cardDescriptionStyle = '',
 }) => {
     return (
-        <div className="w-full grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 px-4 sm:px-0">
+        <div className="w-full grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-3 px-4 sm:px-0">
             {
                 data.map((item, index) => (
                     <div
@@ -60,7 +60,7 @@ const DescriptionSection2: React.FC<DescriptionSectionProps> = ({
     descriptionConfig,
 }) => {
     return (
-        <section className={`py-12 px-1 sm:px-2 md:px-8 lg:px-12 bg-white-cream ${sectionStyles}`}>
+        <section className={`py-12 px-1 sm:px-2 md:px-8 xl:px-12 bg-white-cream ${sectionStyles}`}>
             {title && (
                 <h2 className={`text-3xl font-bold text-center mb-8 ${titleStyle}`}>
                     {title}

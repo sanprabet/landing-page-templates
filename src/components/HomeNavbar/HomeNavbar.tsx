@@ -47,8 +47,8 @@ const HomeNavbar: React.FC<HomeNavbarProps> = ({
     return (
         <nav className={`sticky top-0 z-50 ${navStyles}`}>
             <div className="mx-auto max-w-[110rem] px-4 md:px-2">
-                <div className="flex h-16 items-center justify-between md:h-20">
-                    {/* "Logo Right" Side */}
+                <div className="grid grid-cols-3 h-16 items-center justify-between md:h-20">
+                    {/* "Logo" Side */}
                     <div className="flex items-center">
                         <Link
                             to={logoLink}
@@ -63,19 +63,21 @@ const HomeNavbar: React.FC<HomeNavbarProps> = ({
                     </div>
 
                     {/* "Landing Link" Center DESKTOP */}
-                    <div className="hidden md:flex leading-[4rem]">
-                        <LinksNavBar links={links} />
+                    <div className="flex justify-center">
+                        <div className="hidden md:flex leading-[4rem]">
+                            <LinksNavBar links={links} />
+                        </div>
                     </div>
 
                     {/* "CTA" Right Side DESKTOP */}
-                    <div className="hidden md:block">
+                    <div className="hidden md:flex justify-end">
                         <CTAButton {...ctaConfig} />
                     </div>
 
                     {/* "Menu Button" Right Side MOBILE */}
-                    <div className="flex md:hidden -mr-2">
+                    <div className="flex md:hidden justify-end -mr-2">
                         <MobileMenuButton
-                            buttonStyle = {mobileMenuButtonStyles}
+                            buttonStyle={mobileMenuButtonStyles}
                             isOpen={isOpen}
                             toggleMenu={toggleMenu}
                         />

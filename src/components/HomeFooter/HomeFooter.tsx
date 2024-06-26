@@ -25,7 +25,7 @@ const HomeFooter = ({
 }) => {
     return (
         <footer className={"shadow-md " + footerStyles}>
-            <div className="max-w-7xl px-1 sm:px-3 lg:px-6 py-3">
+            <div className="max-w-7xl px-1 sm:px-3 xl:px-6 py-3">
                 <div className="flex flex-col md:flex-row items-center justify-between">
                     <div className="text-center md:text-left">
                         <p className={"text-xs md:text-sm " + textStyle}>

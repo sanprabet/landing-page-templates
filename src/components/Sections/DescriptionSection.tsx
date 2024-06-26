@@ -15,7 +15,7 @@ const DescriptionList: React.FC<DescriptionListProps> = ({
             {data.map((item, index) => (
                 <div
                     key={index}
-                    className="description-row flex flex-col md:flex-row items-center mt-8 px-2 md:px-4 lg:px-8 border-b-1"
+                    className="description-row flex flex-col md:flex-row items-center mt-8 px-2 md:px-4 xl:px-8 border-b-1"
                 >
                     <div className="description-image w-full md:w-1/2 px-4 order-1 md:order-2">
                         <img
@@ -28,7 +28,7 @@ const DescriptionList: React.FC<DescriptionListProps> = ({
                     <div className="description-content w-full md:w-1/2 px-4">
                         <div
                             className={
-                                'text-[0.9rem] sm:text-[1rem] md:text-[1.1rem] lg:text-[1.2rem] py-[0.2rem] sm:py-[0.3rem] md:py-[0.4rem] lg:py-[0.5rem] px-[0.8rem] sm:px-[0.9rem] md:px-[1rem] lg:px-[1.1rem] w-fit rounded-full flex justify-center align-middle ' +
+                                'text-[0.9rem] sm:text-[1rem] md:text-[1.1rem] xl:text-[1.2rem] py-[0.2rem] sm:py-[0.3rem] md:py-[0.4rem] xl:py-[0.5rem] px-[0.8rem] sm:px-[0.9rem] md:px-[1rem] xl:px-[1.1rem] w-fit rounded-full flex justify-center align-middle ' +
                                 labelStyle
                             }
                         >
@@ -44,7 +44,7 @@ const DescriptionList: React.FC<DescriptionListProps> = ({
                         </h2>
                         <p
                             className={
-                                'text-[0.8rem] sm:text-[1rem] md:text-[1.4rem] lg:text-[1.6rem] my-2 lg:my-4 ' +
+                                'text-[0.8rem] sm:text-[1rem] md:text-[1.4rem] xl:text-[1.6rem] my-2 xl:my-4 ' +
                                 descriptionStyle
                             }
                         >
@@ -79,7 +79,7 @@ const DescriptionSection: React.FC<DescriptionSectionProps> = ({
     ],
 }) => {
     return (
-        <section className={'py-2 pb-12 ' + sectionStyles}>
+        <section className={'py-2 pb-0 ' + sectionStyles}>
             <DescriptionList
                 data={descriptionData}
                 labelStyle={labelStyle}

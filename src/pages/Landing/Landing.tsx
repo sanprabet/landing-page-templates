@@ -2,7 +2,7 @@
 const CTAButtonConfig = {
     ctaButtonText: 'Conoce mas',
     ctaButtonStyles:
-    'bg-secondary-green hover:bg-secondary-green-grey text-main-green py-2 px-6 md:px-4 lg:px-8 text-[1.1rem] md:text-[1.2rem] font-medium w-fit mx-auto my-10',
+    'bg-secondary-green hover:bg-secondary-green-grey text-main-green py-2 px-6 md:px-4 xl:px-8 text-[1.1rem] md:text-[1.2rem] font-medium w-fit',
     ctaButtonId: '#cta',
 };
 
@@ -12,22 +12,22 @@ const HomeNavbarConfig = {
     logoLink: '/',
     links: [
         {
-            text: 'Finanzas',
+            text: 'Inversiones',
             link: '/finanzas'
         },
         {
-            text: 'Salud',
+            text: 'Servicios Salud',
             link: '/salud'
         }
     ],
-    linkStyle: 'bg-red',
+    linkStyle: '',
     ctaConfig: CTAButtonConfig,
     mobileMenuButtonStyles: 'text-main-green bg-secondary-green hover:bg-secondary-green-grey'
 };
 
 import landing from '../../assets/landing.png';
 const HeroSectionConfig = {
-    sectionStyles: 'bg-main-green',
+    sectionStyles: 'bg-main-green pt-[2rem] lg:pt-[4rem]',
     headingText: 'PROVEEMOS SEGURIDAD',
     secondaryText: 'PARA TU FUTURO',
     headingStyles: 'text-white',

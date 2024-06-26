@@ -26,7 +26,7 @@ const FormSection: React.FC<FormSectionProps> = ({
             >
                 <div className={`z-20 w-full px-4 py-14 ${formStyles}`}>
                     <h2
-                        className={`text-center text-[2rem] leading-[2rem] sm:text-[2.8rem] sm:leading-[3rem] md:text-[3rem] md:leading-[3.2rem] lg:text-[4.5rem] lg:leading-[5rem] font-bold mb-4 ${headingStyle}`}
+                        className={`text-center text-[2rem] leading-[2rem] sm:text-[2.8rem] sm:leading-[3rem] md:text-[3rem] md:leading-[3.2rem] xl:text-[4.5rem] xl:leading-[5rem] font-bold mb-4 ${headingStyle}`}
                     >
                         {headingText}
                         <br />

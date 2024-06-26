@@ -40,11 +40,11 @@ const CompaniesSection: React.FC<CompaniesSectionProps> = ({
     ],
 }) => {
     return (
-        <div className="bg-white-cream py-5">
-            <div className="relative pt-[2rem] md:pt-[4rem] lg:pt-[6rem]">
+        <div className="bg-white-cream">
+            <div className="relative pt-[2rem] md:pt-[4rem] xl:pt-[6rem]">
                 <h1
                     className={
-                        'relative z-10 mx-auto mb-2 max-w-fit px-2 text-center text-[2rem] leading-[2rem] font-bold sm:px-4 sm:text-[3.2rem] sm:leading-[3.2rem] md:text-[4rem] md:leading-[4rem] lg:text-[5.5rem] lg:leading-[5.5rem] poppins-light-900 ' +
+                        'relative z-10 mx-auto mb-2 max-w-fit px-2 text-center text-[2rem] leading-[2rem] font-bold sm:px-4 sm:text-[3.2rem] sm:leading-[3.2rem] md:text-[4rem] md:leading-[4rem] xl:text-[5.5rem] xl:leading-[5.5rem] poppins-light-900 ' +
                         headingTextStyles
                     }
                 >
@@ -55,7 +55,7 @@ const CompaniesSection: React.FC<CompaniesSectionProps> = ({
                 <div className="relative z-10 mx-2 flex flex-col justify-center">
                     <p
                         className={
-                            'mx-auto max-w-[25rem] text-center text-[1em] text-gray-900 sm:max-w-[30rem] sm:text-[1.2rem] md:max-w-[35rem] md:text-[1.5rem] lg:max-w-[50rem] lg:text-[1.8rem] poppins-light-400 ' +
+                            'mx-auto max-w-[25rem] text-center text-[1em] text-gray-900 sm:max-w-[30rem] sm:text-[1.2rem] md:max-w-[35rem] md:text-[1.5rem] xl:max-w-[50rem] xl:text-[1.8rem] poppins-light-400 ' +
                             paragraphTextStyles
                         }
                     >

@@ -3,25 +3,30 @@ import React from 'react';
 import { CountryCode } from 'libphonenumber-js';
 
 const CTAButtonConfig = {
-    ctaButtonText: 'Cotiza Ya',
+    ctaButtonText: 'Agenda una cita',
     ctaButtonStyles:
-    'bg-secondary-blue hover:bg-secondary-blue-grey text-main-green my-2 py-2 px-6 md:px-4 lg:px-8 text-[1.1rem] md:text-[1.2rem] font-medium w-fit mx-auto',
+    'bg-secondary-blue hover:bg-secondary-blue-grey text-main-green my-2 py-2 px-6 md:px-4 xl:px-8 text-[1.1rem] md:text-[1.2rem] font-medium w-fit',
     ctaButtonId: '#cta',
 };
 
 const HomeNavbarConfig = {
     navStyles: ' bg-main-blue ',
-    logoText: 'SB Salud',
+    logoText: 'SB',
     logoLink: '/',
-    links: [{ text: 'Servicios Financieros', link: '/finanzas' }],
+    links: [{ text: 'Inversiones', link: '/finanzas' }],
     linkStyle: 'max-w-fit mx-auto my-3',
-    ctaConfig: CTAButtonConfig,
+    ctaConfig: {
+        ctaButtonText: 'Agenda una cita',
+        ctaButtonStyles:
+        'bg-secondary-blue hover:bg-secondary-blue-grey text-main-green py-2 px-6 md:px-4 xl:px-8 text-[1.1rem] md:text-[1.2rem] font-medium w-fit',
+        ctaButtonId: '#cta',
+    },
     mobileMenuButtonStyles: 'text-main-blue bg-secondary-blue hover:bg-secondary-blue-grey'
 };
 
 import landing2 from '../../assets/landing2.png';
 const HeroSectionConfig = {
-    sectionStyles: 'bg-main-blue',
+    sectionStyles: 'bg-main-blue  pt-[2rem] lg:pt-[4rem]',
     headingText: 'CUIDA',
     secondaryText: 'TU FAMILIA',
     headingStyles: 'text-white',
@@ -155,7 +160,7 @@ const DescriptionSection2Config = {
     sectionStyles: 'bg-white-cream',
     
     title: '¿Que planes de salud ofrecemos?',
-    titleStyle: 'poppins-light-900 text-main-blue text-[2rem] leading-[2rem] font-bold sm:px-4 sm:text-[3.2rem] sm:leading-[3.2rem] md:text-[4rem] md:leading-[4rem] lg:text-[5.5rem] lg:leading-[5.5rem] mt-8 mb-4',
+    titleStyle: 'poppins-light-900 text-main-blue text-[2rem] leading-[2rem] font-bold sm:px-4 sm:text-[3.2rem] sm:leading-[3.2rem] md:text-[4rem] md:leading-[4rem] xl:text-[5.5rem] xl:leading-[5.5rem] mt-8 mb-4',
     
     descriptionConfig: {
         data: [
@@ -172,7 +177,7 @@ const DescriptionSection2Config = {
         ],
         cardStyles: 'bg-white-cream-light',
         cardTitleStyle: 'poppins-light-600 text-main-blue',
-        cardDescriptionStyle: 'poppins-light-400 text-[1em] text-gray-900 sm:max-w-[30rem] sm:text-[1.2rem] md:max-w-[35rem] md:text-[1.5rem] lg:max-w-[50rem] lg:text-[1.5rem] lg:leading-[2rem] text-main-blue'
+        cardDescriptionStyle: 'poppins-light-400 text-[1em] text-gray-900 sm:max-w-[30rem] sm:text-[1.2rem] md:max-w-[35rem] md:text-[1.5rem] xl:max-w-[50rem] xl:text-[1.5rem] xl:leading-[2rem] text-main-blue'
     }
 
 }

@@ -20,7 +20,7 @@ interface HeroSectionProps {
     backgroundAlt?: string;
 }
 
-const HeroSection: React.FC<HeroSectionProps> = ({
+const  HeroSection: React.FC<HeroSectionProps> = ({
     sectionStyles = 'bg-main-green',
 
     headingText = 'INSERT',
@@ -42,12 +42,12 @@ const HeroSection: React.FC<HeroSectionProps> = ({
 }) => {
     return (
         <section
-            className={`hero-section relative flex min-h-[calc(100vh-12rem)] flex-col items-center justify-center pt-8 text-center sm:pt-20 md:pt-40 ${sectionStyles}`}
+            className={`hero-section relative flex min-h-[calc(100vh-20rem)] flex-col items-center justify-center text-center ${sectionStyles}`}
         >
             {/* Hero content */}
             <div className="z-20">
                 <h1
-                    className={`poppins-light-900 text-white text-[3rem] leading-[3rem] sm:text-[4rem] sm:leading-[4rem] md:text-[5rem] md:leading-[5rem] lg:text-[6.5rem] lg:leading-[6.5rem] font-bold ${headingStyles}`}
+                    className={`poppins-light-900 text-white text-[3rem] leading-[3rem] sm:text-[4rem] sm:leading-[4rem] md:text-[5rem] md:leading-[5rem] xl:text-[6.5rem] xl:leading-[6.5rem] font-bold ${headingStyles}`}
                 >
                     {headingText}
                     <span className={secondaryStyles} >
@@ -56,10 +56,10 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                     </span>
                 </h1>
 
-                <div className={`mx-2 mt-2 pb-5 lg:pb-9`}>
+                <div className={`mx-2 mt-2 pb-5 xl:pb-9`}>
                     <p
                         className={
-                            'poppins-light-400 text-white max-w-[20rem] text-[0.9rem] sm:max-w-[25rem] sm:text-[1.3rem] md:max-w-[30rem] md:text-[1.5rem] lg:max-w-[40rem] lg:text-[1.8rem] mx-auto ' +
+                            'poppins-light-400 text-white max-w-[20rem] text-[0.9rem] sm:max-w-[25rem] sm:text-[1.3rem] md:max-w-[30rem] md:text-[1.5rem] xl:max-w-[40rem] xl:text-[1.8rem] mx-auto ' +
                             paragraphStyles
                         }
                     >

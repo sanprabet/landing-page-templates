@@ -23,21 +23,21 @@ const Finanzas: React.FC = () => {
     const CTAButtonConfig = {
         ctaButtonText: 'Agenda una cita',
         ctaButtonStyles:
-            'bg-secondary-green hover:bg-secondary-green-grey text-main-green my-2 py-2 px-6 md:px-4 lg:px-8 text-[1.1rem] md:text-[1.2rem] font-medium w-fit mx-auto',
+            'bg-secondary-green hover:bg-secondary-green-grey text-main-green py-2 px-6 md:px-4 xl:px-8 text-[1.1rem] md:text-[1.2rem] font-medium w-fit',
         ctaButtonId: '#cta',
     };
 
     const HomeNavbarConfig = {
         navStyles: ' bg-main-green',
-        logoText: 'SB Finanzas',
+        logoText: 'SB',
         logoLink: '/',
-        links: [{ text: 'Seguros de Salud', link: '/salud' }],
+        links: [{ text: 'Servicios de Salud', link: '/salud' }],
         linkStyle: 'max-w-fit mx-auto my-3',
         ctaConfig: CTAButtonConfig,
     };
 
     const HeroSectionConfig = {
-        sectionStyles: 'bg-main-green',
+        sectionStyles: 'bg-main-green pt-[2rem] lg:pt-[4rem]',
         headingText: 'FINANCIA',
         secondaryText: 'TU FUTURO',
         secondaryStyles: 'text-secondary-green',

@@ -97,19 +97,19 @@ const FormCTA: React.FC<FormProps> = ({
     return (
         <form
             onSubmit={handleSubmit}
-            className={`max-w-md sm:max-w-[35rem] md:max-w-[50rem] lg:max-w-[60rem] mx-auto ${sectionStyles}`}
+            className={`max-w-md sm:max-w-[35rem] md:max-w-[50rem] xl:max-w-[60rem] mx-auto ${sectionStyles}`}
         >
             <div
                 className={`bg-white w-full px-5 md:px-10 py-6 mx-auto rounded-lg shadow-md flex flex-col items-start`}
             >
-                <h3 className="poppins-light-900 text-main-green mx-auto w-[calc(100%-2rem)] sm:w-[calc(100%-2.5rem)] md:w-[calc(100%-3rem)] lg:w-[calc(100%-3.5rem)] text-[1.4rem] leading-[1.4rem] sm:text-[1.6rem] sm:leading-[1.6rem] md:text-[1.8rem] md:leading-[1.8rem] lg:text-[2rem] lg:leading-[2rem] my-6 text-center">
+                <h3 className="poppins-light-900 text-main-green mx-auto w-[calc(100%-2rem)] sm:w-[calc(100%-2.5rem)] md:w-[calc(100%-3rem)] xl:w-[calc(100%-3.5rem)] text-[1.4rem] leading-[1.4rem] sm:text-[1.6rem] sm:leading-[1.6rem] md:text-[1.8rem] md:leading-[1.8rem] xl:text-[2rem] xl:leading-[2rem] my-6 text-center">
                     {formTitle}
                 </h3>
                 {phoneData && (
                     <div className="mb-4 w-full">
                         <label
                             htmlFor="phone"
-                            className={`block text-gray-700 text-sm md:text-base lg:text-lg font-bold mb-2 ${phoneData.labelInputStyles}`}
+                            className={`block text-gray-700 text-sm md:text-base xl:text-lg font-bold mb-2 ${phoneData.labelInputStyles}`}
                         >
                             {phoneData.label}
                         </label>
@@ -121,7 +121,7 @@ const FormCTA: React.FC<FormProps> = ({
                             defaultCountry={phoneData.defaultCountryCode}
                         />
                         {phoneError && (
-                            <p className="text-red-500 text-xs md:text-sm lg:text-base italic">
+                            <p className="text-red-500 text-xs md:text-sm xl:text-base italic">
                                 {phoneError}
                             </p>
                         )}
@@ -131,7 +131,7 @@ const FormCTA: React.FC<FormProps> = ({
                     <div className="mb-4 w-full">
                         <label
                             htmlFor="email"
-                            className={`block text-gray-700 text-sm md:text-base lg:text-lg font-bold mb-2 ${emailData.labelInputStyles}`}
+                            className={`block text-gray-700 text-sm md:text-base xl:text-lg font-bold mb-2 ${emailData.labelInputStyles}`}
                         >
                             {emailData.label}
                         </label>
@@ -140,12 +140,12 @@ const FormCTA: React.FC<FormProps> = ({
                             id="email"
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
-                            className="shadow appearance-none border border-gray-300 rounded w-full py-2 px-3 md:py-3 lg:py-4 text-gray-700 leading-tight"
+                            className="shadow appearance-none border border-gray-300 rounded w-full py-2 px-3 md:py-3 xl:py-4 text-gray-700 leading-tight"
                             placeholder="TuCorreo@gmail.com"
                             required
                         /> 
                         {emailError && (
-                            <p className="text-red-500 text-xs md:text-sm lg:text-base italic">
+                            <p className="text-red-500 text-xs md:text-sm xl:text-base italic">
                                 {emailError}
                             </p>
                         )}
@@ -161,7 +161,7 @@ const FormCTA: React.FC<FormProps> = ({
                     <button
                         type="submit"
                         className={
-                            'poppins-light-400 text-main-green mt-3 px-5 py-2 lg:py-3 lg:px-8 text-md sm:text-lg md:text-xl rounded-lg ' +
+                            'poppins-light-400 text-main-green mt-3 px-5 py-2 xl:py-3 xl:px-8 text-md sm:text-lg md:text-xl rounded-lg ' +
                             submitButtonStyle + (isSubmitting ? ' bg-gray-300 cursor-not-allowed' : ' bg-secondary-green')
                         }
                         disabled={isSubmitting}

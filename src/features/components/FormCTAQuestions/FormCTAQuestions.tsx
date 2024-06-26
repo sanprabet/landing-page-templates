@@ -15,7 +15,7 @@ const FormCTAQuestion: React.FC<FormCTAQuestionProps> = ({
 }) => {
     return (
         <div key={question} className="mb-4 w-full">
-            <label className="block text-gray-700 text-sm md:text-base lg:text-lg font-bold mb-2">
+            <label className="block text-gray-700 text-sm md:text-base xl:text-lg font-bold mb-2">
                 {question}
             </label>
             <div className="switch_3_ways_v2 flex justify-start relative">
@@ -23,7 +23,7 @@ const FormCTAQuestion: React.FC<FormCTAQuestionProps> = ({
                     <div
                         key={idx}
                         id={`option${idx}`}
-                        className={`switch2 px-4 py-2 mr-1 md:px-6 md:py-2 lg:px-8 lg:py-2 text-sm md:text-base lg:text-lg text-center rounded-full cursor-pointer transition-colors duration-300 ${selectedOption === option ? 'bg-green-500 text-white' : 'bg-gray-300 text-gray-700'}`}
+                        className={`switch2 px-4 py-2 mr-1 md:px-6 md:py-2 xl:px-8 xl:py-2 text-sm md:text-base xl:text-lg text-center rounded-full cursor-pointer transition-colors duration-300 ${selectedOption === option ? 'bg-green-500 text-white' : 'bg-gray-300 text-gray-700'}`}
                         onClick={() => onSelect(question, option)}
                     >
                         {option}
