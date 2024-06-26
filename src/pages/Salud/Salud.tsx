@@ -172,7 +172,7 @@ const DescriptionSection2Config = {
         ],
         cardStyles: 'bg-white-cream-light',
         cardTitleStyle: 'poppins-light-600 text-main-blue',
-        cardDescriptionStyle: 'poppins-light-400 text-[1em] text-gray-900 sm:max-w-[30rem] sm:text-[1.2rem] md:max-w-[35rem] md:text-[1.5rem] lg:max-w-[50rem] lg:text-[1.8rem] text-main-blue'
+        cardDescriptionStyle: 'poppins-light-400 text-[1em] text-gray-900 sm:max-w-[30rem] sm:text-[1.2rem] md:max-w-[35rem] md:text-[1.5rem] lg:max-w-[50rem] lg:text-[1.5rem] lg:leading-[2rem] text-main-blue'
     }
 
 }
