@@ -1,76 +1,76 @@
-// components/DescriptionList.tsx
 import React from 'react';
+import { AiFillAlert } from "react-icons/ai";
 
 export interface DescriptionListProps {
-    data: { image: string; title: string; description: string }[];
-    titleStyle?: string;
-    descriptionStyle?: string;
+    data?: { icon: React.ReactElement; title: string; description: string }[];
+    cardStyles?: string;
+    cardTitleStyle?: string;
+    cardDescriptionStyle?: string;
 }
 
 const DescriptionList: React.FC<DescriptionListProps> = ({
-    data,
-    titleStyle,
-    descriptionStyle,
+    data = [
+        {
+            icon: <AiFillAlert />,
+            title: 'Cobertura',
+            description: 'Cobertura en toda la República',
+        },
+    ],
+    cardStyles = '',
+    cardTitleStyle = '',
+    cardDescriptionStyle = '',
 }) => {
     return (
-        <div className="w-full grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {data.map((item, index) => (
-                <div
-                    key={index}
-                    className="description-item flex flex-col items-center text-center p-4 border rounded-lg shadow-md"
-                >
-                    <div className="description-image mb-4">
-                        <img
-                            src={item.image}
-                            alt={item.title}
-                            className="w-full h-auto rounded-lg"
-                        />
-                    </div>
-
-                    <div className="description-content">
-                        <h2
-                            className={`text-xl font-bold mb-2 ${titleStyle}`}
-                        >
-                            {item.title}
-                        </h2>
-                        <p
-                            className={`text-sm mb-4 ${descriptionStyle}`}
-                        >
+        <div className="w-full grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 px-4 sm:px-0">
+            {
+                data.map((item, index) => (
+                    <div
+                        key={index}
+                        className={`description-item flex flex-col p-6 border rounded-lg shadow-lg transition-transform transform hover:scale-105 ${cardStyles}`}
+                    >
+                        <div className="flex items-center justify-start mb-4">
+                            <div className="text-[1.5rem] text-main-green mr-2">
+                                {item.icon}
+                            </div>
+                            <h2 className={`text-[1.5rem] font-bold ${cardTitleStyle}`}>
+                                {item.title}
+                            </h2>
+                        </div>
+                        <p className={`text-base text-gray-700 ${cardDescriptionStyle}`}>
                             {item.description}
                         </p>
                     </div>
-                </div>
-            ))}
+                ))
+            }
         </div>
     );
 };
 
-interface DescriptionSectionProps extends DescriptionListProps {
-  sectionStyles?: string;
+interface DescriptionSectionProps {
+    sectionStyles?: string;
+    title?: string;
+    titleStyle?: string;
+    descriptionConfig?: DescriptionListProps;
 }
 
 const DescriptionSection2: React.FC<DescriptionSectionProps> = ({
-  sectionStyles = '',
-  titleStyle = '',
-  descriptionStyle = '',
-  data = [
-      {
-          image: '',
-          title: 'Default Title',
-          description: 'Default description for the step.',
-      },
-  ],
+    sectionStyles = '',
+    title = '',
+    titleStyle = '',
+    descriptionConfig,
 }) => {
-  return (
-      <section className={`py-8 ${sectionStyles}`}>
-          <h2 className="text-center text-2xl font-bold mb-8">Use Cases</h2>
-          <DescriptionList
-              data={data}
-              titleStyle={titleStyle}
-              descriptionStyle={descriptionStyle}
-          />
-      </section>
-  );
+    return (
+        <section className={`py-12 px-1 sm:px-2 md:px-8 lg:px-12 bg-white-cream ${sectionStyles}`}>
+            {title && (
+                <h2 className={`text-3xl font-bold text-center mb-8 ${titleStyle}`}>
+                    {title}
+                </h2>
+            )}
+            <DescriptionList
+                {...descriptionConfig}
+            />
+        </section>
+    );
 };
 
 export default DescriptionSection2;

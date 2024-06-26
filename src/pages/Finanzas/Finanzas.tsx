@@ -40,6 +40,7 @@ const Finanzas: React.FC = () => {
         sectionStyles: 'bg-main-green',
         headingText: 'FINANCIA',
         secondaryText: 'TU FUTURO',
+        secondaryStyles: 'text-secondary-green',
         headingStyles: '',
         paragraphText:
             'Con inversiones que protegen tu dinero, tu familia y tu negocio.',

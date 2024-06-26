@@ -22,9 +22,9 @@ const FormSection: React.FC<FormSectionProps> = ({
         <>
             <section
                 id={sectionId}
-                className={`form-section w-full py-14 flex flex-col justify-center items-center text-left`}
+                className={`form-section w-full flex flex-col justify-center items-center text-left`}
             >
-                <div className={`z-20 w-full px-4 ${formStyles}`}>
+                <div className={`z-20 w-full px-4 py-14 ${formStyles}`}>
                     <h2
                         className={`text-center text-[2rem] leading-[2rem] sm:text-[2.8rem] sm:leading-[3rem] md:text-[3rem] md:leading-[3.2rem] lg:text-[4.5rem] lg:leading-[5rem] font-bold mb-4 ${headingStyle}`}
                     >
