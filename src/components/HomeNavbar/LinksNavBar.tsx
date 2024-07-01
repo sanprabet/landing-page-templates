@@ -16,7 +16,7 @@ const LinksNavBar: React.FC<LinksNavBarProps> = ({
                     key={index}
                     to={item.link}
                     className={
-                        'poppins-light-300 cursor-pointer text-white text-[1.1rem] md:text-[1.2rem] font-medium hover:text-stone-300 mx-2 ' +
+                        'poppins-light-300 cursor-pointer text-white text-[1.1rem] md:text-[1.2rem] font-medium hover:text-stone-300 ' +
                         linkStyle
                     }
                 >

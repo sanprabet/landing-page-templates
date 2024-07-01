@@ -84,7 +84,7 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({
             className={`${isOpen ? 'block' : 'hidden'} md:hidden`}
             id="mobile-menu"
         >
-            <div className="flex flex-col justify-center space-y-1 px-2 pt-2 pb-5 sm:px-3">
+            <div className="flex flex-col justify-center px-2 pt-2 pb-5 sm:px-3">
                 <LinksNavBar links={links} linkStyle={linkStyle} />
                 <CTAButton {...ctaConfig} />
             </div>

@@ -30,7 +30,7 @@ const HomeNavbar: React.FC<HomeNavbarProps> = ({
     logoLink = '/',
 
     links = [{ text: 'Define Links', link: '/' }],
-    linkStyle = '',
+    linkStyle = 'leading-fi font-medium hover:text-stone-300',
 
     ctaConfig = {
         ctaButtonText: 'Define CTA',
@@ -65,7 +65,7 @@ const HomeNavbar: React.FC<HomeNavbarProps> = ({
                     {/* "Landing Link" Center DESKTOP */}
                     <div className="flex justify-center">
                         <div className="hidden md:flex leading-[4rem]">
-                            <LinksNavBar links={links} />
+                            <LinksNavBar links={links} linkStyle={linkStyle} />
                         </div>
                     </div>
 

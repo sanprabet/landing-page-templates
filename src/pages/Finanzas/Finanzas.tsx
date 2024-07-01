@@ -29,17 +29,22 @@ const Finanzas: React.FC = () => {
         logoLink: '/',
         links: [{ text: 'Portafolio Sura', link: '/salud' }],
         linkStyle: 'max-w-fit mx-auto my-3',
-        ctaConfig: CTAButtonConfig,
+        ctaConfig: {
+            ctaButtonText: 'Agenda una cita',
+            ctaButtonStyles:
+                'bg-secondary-green hover:bg-secondary-green-grey text-main-green py-2 px-6 md:px-4 xl:px-8 text-[1.1rem] md:text-[1.2rem] font-medium w-fit mx-auto',
+            ctaButtonId: '#cta',
+        },
     };
 
     const HeroSectionConfig = {
         sectionStyles: 'bg-main-green pt-[2rem] lg:pt-[4rem]',
-        headingText: 'APUESTA POR TU FUTURO',
+        headingText: 'APUESTA POR TI',
         secondaryText: 'INVIERTE HOY',
         secondaryStyles: 'text-secondary-green',
         headingStyles: '',
         paragraphText:
-            'Con inversiones que protegen tu dinero, tu familia y tu negocio.',
+            'Te ayudamos a escoger la mejor forma de sacar rentabilidad de tu dinero con inversiones seguras.',
         paragraphStyles: '',
         ctaConfig: CTAButtonConfig,
         backgroundImage: landing,

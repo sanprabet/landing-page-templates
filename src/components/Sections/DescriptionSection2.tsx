@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { AiFillAlert } from "react-icons/ai";
 
 export interface DescriptionListProps {
@@ -39,6 +40,13 @@ const DescriptionList: React.FC<DescriptionListProps> = ({
                         <p className={`text-base text-gray-700 ${cardDescriptionStyle}`}>
                             {item.description}
                         </p>
+                        <div>
+                            <Link
+                                to="#cta"
+                                className="text-secondary-green hover:text-secondary-green-light"
+
+                            />
+                        </div>
                     </div>
                 ))
             }

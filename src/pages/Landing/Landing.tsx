@@ -16,25 +16,30 @@ const HomeNavbarConfig = {
             link: '/finanzas'
         },
         {
-            text: 'Servicios Salud',
+            text: 'Portafolio Salud',
             link: '/salud'
         }
     ],
-    linkStyle: '',
-    ctaConfig: CTAButtonConfig,
+    linkStyle: 'mr-3 leading-5 text-center mb-2',
+    ctaConfig: {
+        ctaButtonText: 'Conoce mas',
+        ctaButtonStyles:
+        'bg-secondary-green hover:bg-secondary-green-grey text-main-green py-2 px-6 md:px-4 xl:px-8 text-[1.1rem] md:text-[1.2rem] font-medium w-fit mt-3 mx-auto',
+        ctaButtonId: '#cta',
+    },
     mobileMenuButtonStyles: 'text-main-green bg-secondary-green hover:bg-secondary-green-grey'
 };
 
-import landing from '../../assets/landing.png';
-const HeroSectionConfig = {
-    sectionStyles: 'bg-main-green pt-[2rem] lg:pt-[4rem]',
+import landing from '../../assets/landing3.webp';
+const HeroSection2Config = {
+    sectionStyles: 'bg-main-green lg:pt-[4rem]',
     headingText: 'PROVEEMOS SEGURIDAD',
     secondaryText: 'PARA TU FUTURO',
-    headingStyles: 'text-white',
-    secondaryStyles: 'text-secondary-green',
+    headingStyles: 'poppins-light-900 text-white text-start text-[2.1rem] leading-[2.1rem] sm:text-[2.3rem] sm:leading-[2.3rem] md:text-[2.5rem] md:leading-[2.5rem] xl:text-[4rem] xl:leading-[4rem] font-bold',
+    secondaryStyles: 'text-secondary-green ',
     paragraphText:
     'Con inversiones que protegen tu dinero, y planes de salud que protegen a tu familia.',
-    paragraphStyles: '',
+    paragraphStyles: 'poppins-light-400 text-white max-w-[20rem] text-[0.9rem] sm:max-w-[25rem] sm:text-[1rem] md:max-w-[30rem] md:text-[1.2rem] xl:max-w-[40rem] xl:text-[1.8rem] text-start',
     ctaConfig: CTAButtonConfig,
     backgroundImage: landing,
     backgroundAlt: 'Park Landscape',
@@ -87,7 +92,7 @@ const CompaniesSectionConfig = {
 
 import HomeNavbar from '../../components/HomeNavbar';
 import HomeFooter from '../../components/HomeFooter';
-import HeroSection from '../../components/Sections/HeroSection';
+import HeroSection2 from '../../components/Sections/HeroSection2';
 import CompaniesSection from '../../components/Sections/CompaniesSection';
 
 const Landing: React.FC = () => {
@@ -95,7 +100,7 @@ const Landing: React.FC = () => {
     return (
         <div className="">
             <HomeNavbar {...HomeNavbarConfig} />
-            <HeroSection {...HeroSectionConfig} />
+            <HeroSection2 {...HeroSection2Config} />
             <CompaniesSection {...CompaniesSectionConfig} />
             <HomeFooter {...HomeFooterConfig}/>
         </div>

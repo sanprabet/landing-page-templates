@@ -48,12 +48,12 @@ const CompaniesSectionConfig = {
     secondaryText: 'TENGA EL MEJOR SERVICIO.',
     headingTextStyles: 'text-main-blue',
     paragraphText:
-    'En solo 3 pasos puedes acceder a los productos de salud con mejor cobertura y precios de Colombia.',
+    'Ofrecemos planes de salud que cuidan de ti y tu familia, sin importar tu EPS.',
     paragraphTextStyles: '',
     ctaConfig: {
         ctaButtonText: 'Agenda una cita',
         ctaButtonStyles:
-        'bg-secondary-blue hover:bg-secondary-blue-grey text-main-green my-2 py-2 px-6 md:px-4 xl:px-8 text-[1.1rem] md:text-[1.2rem] font-medium w-fit mx-auto my-[2rem]', 
+        'bg-secondary-blue hover:bg-secondary-blue-grey text-main-green my-2 py-2 px-6 md:px-4 xl:px-8 text-[1.1rem] md:text-[1.2rem] font-medium w-fit mx-auto my-[1rem]', 
         ctaButtonId: '#cta',
     },
     carrouselImages: [
@@ -66,12 +66,50 @@ const CompaniesSectionConfig = {
     ],
 };
 
+import { AiFillAlert } from "react-icons/ai";
+import { FaHospital } from "react-icons/fa";
+const DescriptionSection2Config = {
+    sectionStyles: 'bg-white-cream',
+    
+    title: 'Accede a las mejores coberturas de salud con SURA.',
+    titleStyle: 'poppins-light-900 text-main-blue text-[2rem] leading-[2rem] font-bold sm:px-4 sm:text-[3.2rem] sm:leading-[3.2rem] md:text-[4rem] md:leading-[4rem] xl:text-[5.5rem] xl:leading-[5.5rem] mt-8 mb-4',
+    
+    descriptionConfig: {
+        data: [
+            {
+                icon: <FaHospital />,
+                title: 'SURA - Salud Global',
+                description: 'Máxima cobertura con habitación individual y tratamientos en el exterior. Protección global para tu familia.',
+            },
+            {
+                icon: <AiFillAlert />,
+                title: 'SURA - Salud Clásico',
+                description: 'Esencial y equilibrado: habitación individual y asistencia en viajes. Protección completa y confiable.',
+            },
+            {
+                icon: <AiFillAlert />,
+                title: 'SURA - Salud Evoluciona',
+                description: 'Cobertura básica con laboratorios ilimitados y urgencias por enfermedad. Solución práctica y accesible.',
+            },
+            {
+                icon: <AiFillAlert />,
+                title: 'SURA - Salud Evoluciona',
+                description: 'Cobertura básica con laboratorios ilimitados y urgencias por enfermedad. Solución práctica y accesible.',
+            },
+        ],
+        cardStyles: 'bg-white-cream-light',
+        cardTitleStyle: 'poppins-light-600 text-main-blue text-[1.2em] md:text-[1.8rem] xl:text-[2rem] xl:leading-[2rem]',
+        cardDescriptionStyle: 'poppins-light-400 text-[1em] text-gray-900 sm:max-w-[30rem] sm:text-[1.2rem] md:max-w-[35rem] md:text-[1.4rem] xl:max-w-[50rem] xl:text-[1.5rem] xl:leading-[2rem] text-main-blue'
+    }
+
+}
+
 
 const FormSectionConfig = {
     formStyles: 'bg-main-blue',
     sectionId: 'cta',
-    headingText: 'APUESTA POR TU FUTURO',
-    secondaryText: 'INVIERTE HOY',
+    headingText: 'LA SALUD NO',
+    secondaryText: 'ES NEGOCIABLE',
     headingStyle: 'poppins-light-900 text-secondary-blue',
     formConfig: {
         sectionStyles: 'bg-white-cream rounded-3xl',
@@ -157,39 +195,6 @@ const HomeFooterConfig = {
         },
     ]
 };
-
-import { AiFillAlert } from "react-icons/ai";
-import { FaHospital } from "react-icons/fa";
-const DescriptionSection2Config = {
-    sectionStyles: 'bg-white-cream',
-    
-    title: 'Accede a las mejores coberturas de salud con SURA.',
-    titleStyle: 'poppins-light-900 text-main-blue text-[2rem] leading-[2rem] font-bold sm:px-4 sm:text-[3.2rem] sm:leading-[3.2rem] md:text-[4rem] md:leading-[4rem] xl:text-[5.5rem] xl:leading-[5.5rem] mt-8 mb-4',
-    
-    descriptionConfig: {
-        data: [
-            {
-                icon: <FaHospital />,
-                title: 'Salud Global',
-                description: 'Máxima cobertura con habitación individual y tratamientos en el exterior. Protección global para tu familia.',
-            },
-            {
-                icon: <AiFillAlert />,
-                title: 'Salud Clásico',
-                description: 'Esencial y equilibrado: habitación individual y asistencia en viajes. Protección completa y confiable.',
-            },
-            {
-                icon: <AiFillAlert />,
-                title: 'Salud Evoluciona',
-                description: 'Cobertura básica con laboratorios ilimitados y urgencias por enfermedad. Solución práctica y accesible.',
-            },
-        ],
-        cardStyles: 'bg-white-cream-light',
-        cardTitleStyle: 'poppins-light-600 text-main-blue',
-        cardDescriptionStyle: 'poppins-light-400 text-[1em] text-gray-900 sm:max-w-[30rem] sm:text-[1.2rem] md:max-w-[35rem] md:text-[1.5rem] xl:max-w-[50rem] xl:text-[1.5rem] xl:leading-[2rem] text-main-blue'
-    }
-
-}
 
 import HomeNavbar from '../../components/HomeNavbar';
 import HomeFooter from '../../components/HomeFooter';
