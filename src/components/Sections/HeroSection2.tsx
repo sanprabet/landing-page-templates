@@ -33,41 +33,41 @@ const HeroSection2: React.FC<HeroSection2Props> = ({
 }) => {
     return (
         <section
-            className={`hero-section relative flex flex-col lg:flex-row-reverse items-center justify-center text-center ${sectionStyles}`}
+            className={`hero-section relative flex flex-col lg:flex-row-reverse items-center justify-center ${sectionStyles}`}
         >
-            {/* Background image */}
-            <div className="w-full lg:w-1/2">
-                <img
-                    src={backgroundImage}
-                    alt={backgroundAlt}
-                    className="w-full"
-                />
-            </div>
-
-            {/* Hero content */}
-            <div className="z-20 w-full lg:w-1/2 p-4">
-                <h1
-                    className={headingStyles}
-                >
-                    {headingText}
-                    <span className={secondaryStyles}>
-                        <br />
-                        {secondaryText}
-                    </span>
-                </h1>
-
-                <div className={`mx-2 mt-2 pb-5 xl:pb-9`}>
-                    <p
-                        className={
-                            paragraphStyles
-                        }
-                    >
-                        {paragraphText}
-                    </p>
+                {/* Background image */}
+                <div className="w-full md:max-w-[600px] mx-auto lg:w-1/2">
+                    <img
+                        src={backgroundImage}
+                        alt={backgroundAlt}
+                        className="w-full"
+                    />
                 </div>
 
-                <CTAButton {...ctaConfig} />
-            </div>
+                {/* Hero content */}
+                <div className="z-20 w-full lg:w-1/2 p-4 pb-6 flex flex-col items-center lg:items-start">
+                    <h1
+                        className={headingStyles}
+                    >
+                        {headingText}
+                        <span className={secondaryStyles}>
+                            <br />
+                            {secondaryText}
+                        </span>
+                    </h1>
+
+                    <div className={`my-4`}>
+                        <p
+                            className={
+                                paragraphStyles
+                            }
+                        >
+                            {paragraphText}
+                        </p>
+                    </div>
+
+                    <CTAButton {...ctaConfig} />
+                </div>
         </section>
     );
 };

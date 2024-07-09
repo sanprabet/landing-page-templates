@@ -26,11 +26,7 @@ const CompaniesSection: React.FC<CompaniesSectionProps> = ({
     paragraphText = 'Write some of what your company does here. Be brief',
     paragraphTextStyles = '',
 
-    ctaConfig = {
-        ctaButtonText: 'Define CTA',
-        ctaButtonId: '#cta',
-        ctaButtonStyles: 'bg-secondary-green hover:bg-secondary-green-grey',
-    },
+    ctaConfig,
 
     carrouselImages = [
         { src: '', alt: 'No Images' },
@@ -55,13 +51,13 @@ const CompaniesSection: React.FC<CompaniesSectionProps> = ({
                 <div className="relative z-10 mx-2 flex flex-col justify-center">
                     <p
                         className={
-                            'mx-auto max-w-[25rem] text-center text-[1em] text-gray-900 sm:max-w-[30rem] sm:text-[1.2rem] md:max-w-[35rem] md:text-[1.5rem] xl:max-w-[50rem] xl:text-[1.8rem] poppins-light-400 ' +
+                            'mx-auto max-w-[25rem] text-center text-[1em] text-gray-900 sm:max-w-[30rem] sm:text-[1.2rem] md:max-w-[40rem] md:text-[1.5rem] xl:max-w-[50rem] xl:text-[1.8rem] poppins-light-400 ' +
                             paragraphTextStyles
                         }
                     >
                         {paragraphText}
                     </p>
-                    <CTAButton {...ctaConfig} />
+                    {ctaConfig && <CTAButton {...ctaConfig} />}
                 </div>
             </div>
             <LogoCarrousel carrouselImages={carrouselImages} />

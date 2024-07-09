@@ -6,6 +6,7 @@ interface FormSectionProps {
     sectionId?: string;
     headingText?: string;
     secondaryText?: string;
+    secondaryStyles?: string;
     headingStyle?: string;
     formConfig?: FormProps;
 }
@@ -15,6 +16,7 @@ const FormSection: React.FC<FormSectionProps> = ({
     sectionId = 'cta',
     headingText = 'ADD A HEADING',
     secondaryText = 'ADD A SECONDARY TEXT',
+    secondaryStyles = '',
     headingStyle = '',
     formConfig,
 }) => {
@@ -26,11 +28,11 @@ const FormSection: React.FC<FormSectionProps> = ({
             >
                 <div className={`z-20 w-full px-4 py-14 ${formStyles}`}>
                     <h2
-                        className={`text-center text-[2rem] leading-[2rem] sm:text-[2.8rem] sm:leading-[3rem] md:text-[3rem] md:leading-[3.2rem] xl:text-[4.5rem] xl:leading-[5rem] font-bold mb-4 ${headingStyle}`}
+                        className={`${headingStyle}`}
                     >
                         {headingText}
                         <br />
-                        <span className="text-white">{secondaryText}</span>
+                        <span className={secondaryStyles}>{secondaryText}</span>
                     </h2>
                     <FormCTA {...formConfig} />
                 </div>

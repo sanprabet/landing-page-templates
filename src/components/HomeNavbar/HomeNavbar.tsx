@@ -30,7 +30,7 @@ const HomeNavbar: React.FC<HomeNavbarProps> = ({
     logoLink = '/',
 
     links = [{ text: 'Define Links', link: '/' }],
-    linkStyle = 'leading-fi font-medium hover:text-stone-300',
+    linkStyle = 'poppins-light-300 cursor-pointer text-white text-[1.1rem] md:text-[1.2rem] font-medium hover:text-stone-300',
 
     ctaConfig = {
         ctaButtonText: 'Define CTA',

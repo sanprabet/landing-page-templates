@@ -47,7 +47,7 @@ const  HeroSection: React.FC<HeroSectionProps> = ({
             {/* Hero content */}
             <div className="z-20">
                 <h1
-                    className={`poppins-light-900 text-white text-[3rem] leading-[3rem] sm:text-[4rem] sm:leading-[4rem] md:text-[5rem] md:leading-[5rem] xl:text-[6.5rem] xl:leading-[6.5rem] font-bold ${headingStyles}`}
+                    className={headingStyles}
                 >
                     {headingText}
                     <span className={secondaryStyles} >
@@ -56,10 +56,10 @@ const  HeroSection: React.FC<HeroSectionProps> = ({
                     </span>
                 </h1>
 
-                <div className={`mx-2 mt-2 pb-5 xl:pb-9`}>
+                <div className={`mx-2 mt-2 pb-5`}>
                     <p
                         className={
-                            'poppins-light-400 text-white max-w-[20rem] text-[0.9rem] sm:max-w-[25rem] sm:text-[1.3rem] md:max-w-[30rem] md:text-[1.5rem] xl:max-w-[40rem] xl:text-[1.8rem] mx-auto ' +
+                            'poppins-light-400 text-white max-w-[20rem] text-[0.9rem] sm:max-w-[25rem] sm:text-[1.3rem] md:max-w-[30rem] md:text-[1.5rem] xl:max-w-[40rem] xl:text-[1.8rem]' +
                             paragraphStyles
                         }
                     >

@@ -28,7 +28,7 @@ const Finanzas: React.FC = () => {
         logoText: 'SB',
         logoLink: '/',
         links: [{ text: 'Portafolio Sura', link: '/salud' }],
-        linkStyle: 'max-w-fit mx-auto my-3',
+        linkStyle: 'max-w-fit mx-auto my-3 poppins-light-300 cursor-pointer text-white text-[1.1rem] md:text-[1.2rem] font-medium hover:text-stone-300',
         ctaConfig: {
             ctaButtonText: 'Agenda una cita',
             ctaButtonStyles:

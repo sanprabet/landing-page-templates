@@ -13,12 +13,21 @@ const HomeNavbarConfig = {
     navStyles: ' bg-main-blue ',
     logoText: 'SB',
     logoLink: '/',
-    links: [{ text: 'Inversiones', link: '/finanzas' }],
-    linkStyle: 'max-w-fit mx-auto my-3',
+    links: [
+        {
+            text: 'Inversiones',
+            link: '/finanzas'
+        },
+        {
+            text: 'Quien Somos',
+            link: '/'
+        }
+    ],
+    linkStyle: 'max-w-fit mx-auto my-3 poppins-light-300 cursor-pointer text-white text-[1rem] md:text-[1.1rem] font-medium hover:text-stone-300 md:mx-3',
     ctaConfig: {
         ctaButtonText: 'Agenda una cita',
         ctaButtonStyles:
-        'bg-secondary-blue hover:bg-secondary-blue-grey text-main-green py-2 px-6 md:px-4 xl:px-8 text-[1.1rem] md:text-[1.2rem] font-medium w-fit',
+        'bg-secondary-blue hover:bg-secondary-blue-grey text-main-green py-[0.4rem] px-2 xl:px-4 text-[1.1rem] md:text-[1.2rem] font-medium w-fit',
         ctaButtonId: '#cta',
     },
     mobileMenuButtonStyles: 'text-main-blue bg-secondary-blue hover:bg-secondary-blue-grey'
@@ -26,13 +35,13 @@ const HomeNavbarConfig = {
 
 import landing2 from '../../assets/landing2.png';
 const HeroSectionConfig = {
-    sectionStyles: 'bg-main-blue  pt-[2rem] lg:pt-[4rem] min-h-[calc(100vh-90rem)]',
+    sectionStyles: 'bg-main-blue pt-[2rem] lg:pt-[4rem] min-h-[calc(100vh-90rem)]',
     headingText: 'CUIDA',
     secondaryText: 'TU FAMILIA',
-    headingStyles: 'text-white',
+    headingStyles: 'text-white poppins-light-900 text-white text-[3rem] leading-[3rem] sm:text-[4rem] sm:leading-[4rem] md:text-[5rem] md:leading-[5rem] xl:text-[6.5rem] xl:leading-[6.5rem] font-bold',
     secondaryStyles: 'text-secondary-blue',
     paragraphText:
-    'Con servicios de salud fuera de tu EPS.',
+    'Planes de Salud Adaptados a Tus Necesidades.',
     paragraphStyles: '',
     ctaConfig: CTAButtonConfig,
     backgroundImage: landing2,
@@ -48,14 +57,8 @@ const CompaniesSectionConfig = {
     secondaryText: 'TENGA EL MEJOR SERVICIO.',
     headingTextStyles: 'text-main-blue',
     paragraphText:
-    'Ofrecemos planes de salud que cuidan de ti y tu familia, sin importar tu EPS.',
+    'Trabajamos con las mejores empresas del pais para cubrir todas tus necesidades. Desde Polizas hospitalarias hasta coberturas internacionales de salud.',
     paragraphTextStyles: '',
-    ctaConfig: {
-        ctaButtonText: 'Agenda una cita',
-        ctaButtonStyles:
-        'bg-secondary-blue hover:bg-secondary-blue-grey text-main-green my-2 py-2 px-6 md:px-4 xl:px-8 text-[1.1rem] md:text-[1.2rem] font-medium w-fit mx-auto my-[1rem]', 
-        ctaButtonId: '#cta',
-    },
     carrouselImages: [
         { src: Sura, alt: 'Company 2' },
         { src: Panamerican, alt: 'Company 4' },
@@ -66,39 +69,23 @@ const CompaniesSectionConfig = {
     ],
 };
 
-import { AiFillAlert } from "react-icons/ai";
-import { FaHospital } from "react-icons/fa";
 const DescriptionSection2Config = {
-    sectionStyles: 'bg-white-cream',
+    sectionStyles: 'bg-main-blue',
     
     title: 'Accede a las mejores coberturas de salud con SURA.',
-    titleStyle: 'poppins-light-900 text-main-blue text-[2rem] leading-[2rem] font-bold sm:px-4 sm:text-[3.2rem] sm:leading-[3.2rem] md:text-[4rem] md:leading-[4rem] xl:text-[5.5rem] xl:leading-[5.5rem] mt-8 mb-4',
+    titleStyle: 'poppins-light-600 text-secondary-blue text-[2rem] leading-[2rem] font-bold sm:px-4 sm:text-[3.2rem] sm:leading-[3.2rem] md:text-[4rem] md:leading-[4rem] xl:text-[5.5rem] xl:leading-[5.5rem] mt-8 mb-4',
     
     descriptionConfig: {
         data: [
             {
-                icon: <FaHospital />,
-                title: 'SURA - Salud Global',
+                title: 'Salud Global',
+                company: 'SURA',
                 description: 'Máxima cobertura con habitación individual y tratamientos en el exterior. Protección global para tu familia.',
-            },
-            {
-                icon: <AiFillAlert />,
-                title: 'SURA - Salud Clásico',
-                description: 'Esencial y equilibrado: habitación individual y asistencia en viajes. Protección completa y confiable.',
-            },
-            {
-                icon: <AiFillAlert />,
-                title: 'SURA - Salud Evoluciona',
-                description: 'Cobertura básica con laboratorios ilimitados y urgencias por enfermedad. Solución práctica y accesible.',
-            },
-            {
-                icon: <AiFillAlert />,
-                title: 'SURA - Salud Evoluciona',
-                description: 'Cobertura básica con laboratorios ilimitados y urgencias por enfermedad. Solución práctica y accesible.',
-            },
+            }
         ],
         cardStyles: 'bg-white-cream-light',
         cardTitleStyle: 'poppins-light-600 text-main-blue text-[1.2em] md:text-[1.8rem] xl:text-[2rem] xl:leading-[2rem]',
+        cardSubtitleStyle: 'poppins-light-400 text-[1em] text-gray-900 sm:max-w-[30rem] sm:text-[1.2rem] md:max-w-[35rem] md:text-[1.4rem] xl:max-w-[50rem] xl:text-[1.5rem] text-main-blue',
         cardDescriptionStyle: 'poppins-light-400 text-[1em] text-gray-900 sm:max-w-[30rem] sm:text-[1.2rem] md:max-w-[35rem] md:text-[1.4rem] xl:max-w-[50rem] xl:text-[1.5rem] xl:leading-[2rem] text-main-blue'
     }
 
@@ -106,11 +93,12 @@ const DescriptionSection2Config = {
 
 
 const FormSectionConfig = {
-    formStyles: 'bg-main-blue',
+    formStyles: 'bg-white-cream',
     sectionId: 'cta',
     headingText: 'LA SALUD NO',
     secondaryText: 'ES NEGOCIABLE',
-    headingStyle: 'poppins-light-900 text-secondary-blue',
+    headingStyle: 'poppins-light-900 text-main-blue text-center text-[2rem] leading-[2rem] sm:text-[2.8rem] sm:leading-[3rem] md:text-[3rem] md:leading-[3.2rem] xl:text-[4.5rem] xl:leading-[5rem] font-bold mb-4',
+    secondaryStyles: 'text-secondary-blue',
     formConfig: {
         sectionStyles: 'bg-white-cream rounded-3xl',
         formTitle:
@@ -179,7 +167,7 @@ const HomeFooterConfig = {
     footerStyles: 'bg-main-blue',
     text: '&copy; 2024 TiendYa. All rights reserved.',
     textStyle: 'text-secondary-blue',
-    linkStyles: 'text-white hover:text-stone-300',
+    linkStyles: 'poppins-light-300 cursor-pointer text-white text-[1.1rem] md:text-[1.2rem] font-medium hover:text-stone-300',
     links: [
         {
             link: '/redes',

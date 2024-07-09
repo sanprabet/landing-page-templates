@@ -14,7 +14,7 @@ const CTAButton: React.FC<CTAButtonProps> = ({
     return (
         <Link
             to={ctaButtonId}
-            className={'rounded-3xl p-1 poppins-light-400 ' + ctaButtonStyles}
+            className={'rounded-3xl poppins-light-400 ' + ctaButtonStyles}
         >
             {ctaButtonText}
         </Link>
